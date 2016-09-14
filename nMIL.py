@@ -1,9 +1,14 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
 
-__author__ = "Yue Ning"
-__email__ = "yning@vt.edu"
-__version__ = "0.0.1"
+"""
+Source code for paper -
+    "Modeling Precursors for Event Forecasting via Nested Multi-Instance Learning" 
+    Authors: Yue Ning, Sathappan Muthiah, Huzefa Rangwala, Naren Ramakrishnan
+published in KDD16.
+
+"""
+
 
 import sklearn
 import sklearn.svm
