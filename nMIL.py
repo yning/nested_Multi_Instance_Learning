@@ -348,7 +348,7 @@ def main(args):
     start  = datetime.now()
     model = nMIL(bagsize=day, beta=args.beta, gamma=args.gamma, m0=args.m0, p0=args.p0)
     print "Learning for Bag Size: %d" % day
-    model.read_data(histIndex=historyMap, docIndex=docMap, feature=args.feature)
+    model.read_data(trainIndex=trainMap, testIndex=testMap, docIndex=docMap, feature=args.feature)
     model, perf1, perf2, gsrHistoryProbs = model.SGD()
 
     timediff = datetime.now() - start
